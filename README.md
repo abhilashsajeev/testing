@@ -82,7 +82,7 @@ During installation depending on your os and prerequiste versions you may encoun
 
 Most issues can be solved by one of the following tips, but if you are unable to find a solution feel free to contact us via the repository issue tracker or the links provided below.
 ### Phantomjs
-Phantomjs is headleas brower we use it for testing and prerendering apps. If you get any *Error: phantomjs not found* install phantomjs in your system either by
+PhantomJS is a headless WebKit scriptable with a JavaScript API. We use it for testing and prerendering apps. If you get any *Error: phantomjs not found* install phantomjs in your system either by
 ```bash
 $ npm install -g phantomjs
 ```
