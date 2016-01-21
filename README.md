@@ -1,11 +1,11 @@
 
 # [![MEAN Logo](http://mean.io/system/assets/img/logos/meanlogo.png)](http://mean.io/) M.E.A.N Stack - FR SEO tool
-FR SEO tool is built on MEAN stack. This tool crawls the given websites and generates reports on SEO strength of given page. It is also used to serve prerendered pages for modern single page applications. It renders a page in a headless browser and the generated html is saved in S3 bucket.
+FR SEO tool is built on MEAN stack. This tool crawls through the specified websites and generates reports on SEO strength of given page. The 'SEO strength' of any given page is based on a set of checks which are carried out by the tool as specified. The tool functions by rendering pages in a headless browser and by saving the generated html in a S3 bucket. It is also used to serve prerendered pages for modern single page applications.
 
 MEAN is a framework for an easy starting point with [MongoDB](http://www.mongodb.org/), [Node.js](http://www.nodejs.org/), [Express](http://expressjs.com/), and [AngularJS](http://angularjs.org/) based applications. It is designed to give you a quick and organized way to start developing MEAN based web apps with useful modules like Mongoose and Passport pre-bundled and configured. We mainly try to take care of the connection points between existing popular frameworks and solve common integration problems.
 ## Prerequisites
 * *MongoDB* - <a href="http://www.mongodb.org/downloads">Download</a> and Install mongodb - <a href="http://docs.mongodb.org/manual">Checkout their manual</a> if you're just starting.
-* *Node.js* - <a href="http://nodejs.org/download/">Download</a> and Install Node.js, nodeschool has free <a href=" http://nodeschool.io/#workshoppers">node tutorials</a> to get you started. For now install a node version 0.12.x or lesser and npm 2.x.x or lesser.
+* *Node.js* - <a href="http://nodejs.org/download/">Download</a> and Install Node.js, preferably version 0.12.x or lesser and npm 2.x.x or lesser. Nodeschool has free <a href=" http://nodeschool.io/#workshoppers">node tutorials</a> to get you started. For now install a node version 0.12.x or lesser and npm 2.x.x or lesser.
 
 ```bash
 $ curl -sL https://deb.nodesource.com/setup | sudo bash -
@@ -14,7 +14,7 @@ $ sudo apt-get install nodejs
 ```
 
 * *Git* - Get git using a package manager or <a href="http://git-scm.com/downloads">download</a> it.
-* Mean currently works with either grunt or gulp..
+* MEAN currently works with either grunt or gulp.
 ```
 $ npm install -g grunt-cli
 $ npm install -g gulp
@@ -29,19 +29,19 @@ $ mean init <myApp>
 $ cd <myApp> && npm install
 ```
 ## Installing the SEO tool
-Clone the repo 
+* Clone the repo 
 ```bash
 $ git clone https://github.com/fastretailing/uq-jp-seo-tool.git
 ```
-cd to repo
+* cd to repo
 ```bash
 $ cd uq-jp-seo-tool
 ```
-Install npm dependencies
+* Install npm dependencies
 ```bash
 $ npm install
 ```
-Install bower dependencies
+* Install bower dependencies
 ```bash
 $ bower install
 ```
@@ -68,24 +68,22 @@ Then, open a browser and go to:
 http://localhost:3000
 ```
 
-If you want the app to run at a different port
+If you want the app to run at a different port, use:
 ```bash
 $ export PORT=8080
 ```
 
 ### Troubleshooting
-During installation depending on your os and prerequiste versions you may encounter some issues.
-
-Most issues can be solved by one of the following tips, but if you are unable to find a solution feel free to contact us via the repository issue tracker or the links provided below.
-### Phantomjs
+During installation depending on your OS and prerequiste versions you may encounter some issues. Most issues can be solved by one of the following tips, but if you are unable to find a solution feel free to contact us via the repository issue tracker or the links provided below.
+### PhantomJS
 PhantomJS is a headless WebKit scriptable with a JavaScript API. We use it for testing and prerendering apps. 
-If you get any *Error: you don't have phantomjs installed*, install phantomjs in your system either by
+If you get an error "*Error: you don't have phantomjs installed*", install PhantomJS in your system either by
 ```bash
 $ npm install -g phantomjs
 ```
-or see [Phantomjs download](http://phantomjs.org/download.html)
+or see [PhantomJS download](http://phantomjs.org/download.html)
 
-*Note: As of now this project uses phantomjs version 1.9.8*
+*Note: As of now this project uses PhantomJS version 1.9.8*
 
 #### Update NPM, Bower or Grunt
 Sometimes you may find there is a weird error during install like npm's *Error: ENOENT*. Usually updating those tools to the latest version solves the issue.
@@ -122,8 +120,8 @@ $ bower cache clean
 #### Installation problems on Windows 8 / 8.1
 Some of Mean.io dependencies uses [node-gyp](https://github.com/TooTallNate/node-gyp) with supported Python version 2.7.x. So if you see an error related to node-gyp rebuild follow next steps:
 
-1. install [Python 2.7.x](https://www.python.org/downloads/)
-2. install [Microsoft Visual Studio C++ 2012 Express](http://www.microsoft.com/ru-ru/download/details.aspx?id=34673)
+1. Install [Python 2.7.x](https://www.python.org/downloads/)
+2. Install [Microsoft Visual Studio C++ 2012 Express](http://www.microsoft.com/ru-ru/download/details.aspx?id=34673)
 3. Run NPM update
 
 ```bash
@@ -658,4 +656,3 @@ $ heroku config:set NODE_ENV=production
 
 ## License
 We believe that mean should be free and easy to integrate within your existing projects so we chose [The MIT License](http://opensource.org/licenses/MIT)
-
