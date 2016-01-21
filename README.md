@@ -1,15 +1,11 @@
-[![Build Status](https://travis-ci.org/linnovate/mean.svg?branch=master)](https://travis-ci.org/linnovate/mean)
-[![Dependencies Status](https://david-dm.org/linnovate/mean.svg)](https://david-dm.org/linnovate/mean)
-[![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
-[![Gitter](https://badges.gitter.im/JoinChat.svg)](https://gitter.im/linnovate/mean?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 # [![MEAN Logo](http://mean.io/system/assets/img/logos/meanlogo.png)](http://mean.io/) M.E.A.N Stack - FR SEO tool
-FR SEO tool is built on MEAN stack.
+FR SEO tool is built on MEAN stack. This tool crawls the given websites and generates reports on SEO strength of given page. It is also used to serve prerendered pages for modern single page applications. It renders a page in a headless browser and the generated html is saved in S3 bucket.
 
 MEAN is a framework for an easy starting point with [MongoDB](http://www.mongodb.org/), [Node.js](http://www.nodejs.org/), [Express](http://expressjs.com/), and [AngularJS](http://angularjs.org/) based applications. It is designed to give you a quick and organized way to start developing MEAN based web apps with useful modules like Mongoose and Passport pre-bundled and configured. We mainly try to take care of the connection points between existing popular frameworks and solve common integration problems.
 ## Prerequisites
 * *MongoDB* - <a href="http://www.mongodb.org/downloads">Download</a> and Install mongodb - <a href="http://docs.mongodb.org/manual">Checkout their manual</a> if you're just starting.
-* *Node.js* - <a href="http://nodejs.org/download/">Download</a> and Install Node.js, nodeschool has free <a href=" http://nodeschool.io/#workshoppers">node tutorials</a> to get you started. For now install a node version 0.12 or lesser and npm 2.x or lesser.
+* *Node.js* - <a href="http://nodejs.org/download/">Download</a> and Install Node.js, nodeschool has free <a href=" http://nodeschool.io/#workshoppers">node tutorials</a> to get you started. For now install a node version 0.12.x or lesser and npm 2.x.x or lesser.
 
 ```bash
 $ curl -sL https://deb.nodesource.com/setup | sudo bash -
@@ -82,7 +78,8 @@ During installation depending on your os and prerequiste versions you may encoun
 
 Most issues can be solved by one of the following tips, but if you are unable to find a solution feel free to contact us via the repository issue tracker or the links provided below.
 ### Phantomjs
-PhantomJS is a headless WebKit scriptable with a JavaScript API. We use it for testing and prerendering apps. If you get any *Error: phantomjs not found* install phantomjs in your system either by
+PhantomJS is a headless WebKit scriptable with a JavaScript API. We use it for testing and prerendering apps. 
+If you get any *Error: you don't have phantomjs installed*, install phantomjs in your system either by
 ```bash
 $ npm install -g phantomjs
 ```
@@ -658,12 +655,6 @@ $ heroku config:set NODE_ENV=production
 ## More Information
   * Visit us at [Linnovate.net](http://www.linnovate.net/).
   * Visit our [Ninja's Zone](http://www.meanleanstartupmachine.com/) for extended support.
-
-## Credits
-  * To our awesome <a href="https://github.com/orgs/linnovate/teams/mean">core team</a> with help of our <a href="https://github.com/linnovate/mean/graphs/contributors">contributors</a> which have made this project a success.
-  * <a href="https://github.com/vkarpov15">Valeri Karpov</a> for coining the term *mean* and triggering the mean stack movement.
-  * <a href="https://github.com/amoshaviv">Amos Haviv</a>  for the creation of the initial version of Mean.io while working for us @linnovate.
-  * <a href="https://github.com/madhums/">Madhusudhan Srinivasa</a> which inspired us with his great work.
 
 ## License
 We believe that mean should be free and easy to integrate within your existing projects so we chose [The MIT License](http://opensource.org/licenses/MIT)
