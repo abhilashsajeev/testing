@@ -36,7 +36,7 @@ $ npm install
 * Install bower dependencies
 ```bash
 $ bower install 
-# or 
+# or if you don't have global bower installation
 $ ./node_modules/bower/bin/bower install
 ```
 
@@ -127,13 +127,7 @@ MEAN is an acronym for *M*ongo, *E*xpress.js , *A*ngular.js and *N*ode.js
 <dt>Node.js</dt>
 <dd>Start by going through Node.js Official Website and this StackOverflow thread, which should get you going with the Node.js platform in no time.</dd>
 </dl>
-### Installing the MEAN CLI
 
-```bash
-$ npm install -g mean-cli
-$ mean init <myApp>
-$ cd <myApp> && npm install
-```
 ### Additional Tools
 * <a href="http://mongoosejs.com/">Mongoose</a> - The mongodb node.js driver in charge of providing elegant mongodb object modeling for node.js
 * <a href="http://passportjs.org/">Passport</a> - An authentication middleware for Node.js which supports authentication using a username and password, Facebook, Twitter, and more.
@@ -142,6 +136,14 @@ $ cd <myApp> && npm install
 
 
 ## CLI
+
+### Installing the MEAN CLI
+
+```bash
+$ npm install -g mean-cli
+$ mean init <myApp>
+$ cd <myApp> && npm install
+```
 ### Overview
 
 The MEAN CLI is a simple Command Line Interface for installing and managing MEAN applications. As a core module of the Mean.io project, it provides a number of useful tools to make interaction with your MEAN application easier, with features such as: scaffolding, module creation and admin, status checks, and user management.
