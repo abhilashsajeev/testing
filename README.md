@@ -101,7 +101,7 @@ $ npm cache clean
 * Bower Clean Cache:
 ```bash
 $ bower cache clean
-# or if you don't have a global grunt installation
+# or if you don't have a global bower installation
 $ node_modules/bower/bin/bower cache clean
 ```
 
