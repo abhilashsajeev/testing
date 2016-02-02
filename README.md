@@ -19,13 +19,7 @@ $ sudo apt-get install nodejs
 $ npm install -g grunt-cli
 $ npm install -g gulp
 ```
-### Install the MEAN CLI
 
-```bash
-$ npm install -g mean-cli
-$ mean init <myApp>
-$ cd <myApp> && npm install
-```
 ## Installing the SEO tool
 * Clone the repo 
 ```bash
@@ -79,6 +73,7 @@ $ export PORT=8080
 
 ### Troubleshooting
 During installation depending on your OS and prerequiste versions you may encounter some issues. Most issues can be solved by one of the following tips, but if you are unable to find a solution feel free to contact us via the repository issue tracker or the links provided below.
+
 #### PhantomJS
 PhantomJS is a headless WebKit scriptable with a JavaScript API. We use it for testing and prerendering apps. 
 If you get an error "*Error: you don't have phantomjs installed*", install PhantomJS in your system either by
@@ -101,7 +96,7 @@ $ npm cache clean
 * Bower Clean Cache:
 ```bash
 $ bower cache clean
-# or if you don't have a global bower installation
+# or if you don't have a global grunt installation
 $ node_modules/bower/bin/bower cache clean
 ```
 
@@ -132,7 +127,13 @@ MEAN is an acronym for *M*ongo, *E*xpress.js , *A*ngular.js and *N*ode.js
 <dt>Node.js</dt>
 <dd>Start by going through Node.js Official Website and this StackOverflow thread, which should get you going with the Node.js platform in no time.</dd>
 </dl>
+### Installing the MEAN CLI
 
+```bash
+$ npm install -g mean-cli
+$ mean init <myApp>
+$ cd <myApp> && npm install
+```
 ### Additional Tools
 * <a href="http://mongoosejs.com/">Mongoose</a> - The mongodb node.js driver in charge of providing elegant mongodb object modeling for node.js
 * <a href="http://passportjs.org/">Passport</a> - An authentication middleware for Node.js which supports authentication using a username and password, Facebook, Twitter, and more.
