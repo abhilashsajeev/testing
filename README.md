@@ -18,8 +18,6 @@ $ sudo apt-get install nodejs
 ```
 $ npm install -g grunt-cli
 $ npm install -g gulp
-// and bower
-$ npm install -g bower 
 ```
 ### Install the MEAN CLI
 
@@ -43,17 +41,23 @@ $ npm install
 ```
 * Install bower dependencies
 ```bash
-$ bower install
+$ bower install 
+# or 
+$ ./node_modules/bower/bin/bower install
 ```
 
 ### Invoke FR SEO tool with Grunt
 We recommend using [Grunt](https://github.com/gruntjs/grunt-cli) to start the server:
 ```bash
 $ grunt
+# or if you don't have a global grunt installation
+$ node_modules/grunt-cli/bin/grunt
 ```
 If grunt aborts because of JSHINT errors, these can be overridden with the `force` flag:
 ```bash
 $ grunt -f
+# or if you don't have a global grunt installation
+$ node_modules/grunt-cli/bin/grunt -f
 ```
 Alternatively, when not using `grunt` (and for production environments) you can run:
 ```bash
@@ -75,33 +79,15 @@ $ export PORT=8080
 
 ### Troubleshooting
 During installation depending on your OS and prerequiste versions you may encounter some issues. Most issues can be solved by one of the following tips, but if you are unable to find a solution feel free to contact us via the repository issue tracker or the links provided below.
-### PhantomJS
+#### PhantomJS
 PhantomJS is a headless WebKit scriptable with a JavaScript API. We use it for testing and prerendering apps. 
 If you get an error "*Error: you don't have phantomjs installed*", install PhantomJS in your system either by
 ```bash
-$ npm install -g phantomjs
+$ sudo npm install phantomjs
 ```
 or see [PhantomJS download](http://phantomjs.org/download.html)
 
 *Note: As of now this project uses PhantomJS version 1.9.8*
-
-#### Update NPM, Bower or Grunt
-Sometimes you may find there is a weird error during install like npm's *Error: ENOENT*. Usually updating those tools to the latest version solves the issue.
-
-* Updating NPM:
-```bash
-$ npm update -g npm
-```
-
-* Updating Grunt:
-```bash
-$ npm update -g grunt-cli
-```
-
-* Updating Bower:
-```bash
-$ npm update -g bower
-```
 
 #### Cleaning NPM and Bower cache
 NPM and Bower has a caching system for holding packages that you already installed.
@@ -115,6 +101,8 @@ $ npm cache clean
 * Bower Clean Cache:
 ```bash
 $ bower cache clean
+# or if you don't have a global grunt installation
+$ node_modules/bower/bin/bower cache clean
 ```
 
 #### Installation problems on Windows 8 / 8.1
@@ -127,7 +115,7 @@ Some of Mean.io dependencies uses [node-gyp](https://github.com/TooTallNate/node
 ```bash
 $ npm update -g
 ```
-
+*Note : Make sure your node version is 0.12.x or lesser and npm version is 2.x.x or lesser*
 ## Technologies
 
 ### The MEAN stack
